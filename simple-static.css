@@ -410,6 +410,121 @@ feature-box {
   color: #fff;
   font-size: 12px;
 }
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero p {
+    font-size: 22px;
+  }
+  .video-wrapper {
+    width: 90%;
+    left: 5%;
+  }
+  .trust-section p {
+    font-size: 22px;
+  }
+  .about-container h1 {
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .about-container p {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+  .logo-grid {
+    gap: 40px;
+  }
+  .logo-grid img {
+    width: 90px;
+  }
+  .solutions-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .solutions-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .nav-right {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 120px 20px 60px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .btn-main {
+    font-size: 16px;
+  }
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    left: 0;
+    transform: none;
+    margin-top: 30px;
+  }
+  .trust-section {
+    padding: 80px 20px;
+  }
+  .trust-section p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .logo-grid {
+    gap: 30px;
+  }
+  .logo-grid img {
+    width: 70px;
+  }
+  .about-section {
+    padding: 80px 20px;
+  }
+  .about-container h1 {
+    font-size: 32px;
+  }
+  .about-container p {
+    font-size: 18px;
+  }
+  .card {
+    padding: 30px;
+  }
+  .card h3 {
+    font-size: 22px;
+  }
+  .card p {
+    font-size: 16px;
+  }
+  .solution-card {
+    padding: 25px;
+  }
+  .solutions-text h2 {
+    font-size: 32px;
+  }
+}
 
 
 
