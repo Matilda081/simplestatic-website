@@ -374,12 +374,11 @@ feature-box {
   background: #1b1930;
 }
 
-.feature-box h5 {
-  margin-bottom: 15px;
-}
 
 .feature-box h5 {
   margin-bottom: 15px;
+  padding: 10px 30px 10px 10px;
+  font-size: 15px;
 }
 
 .feature-box ul {
@@ -388,7 +387,8 @@ feature-box {
 
 .feature-box ul li {
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 60px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -403,12 +403,14 @@ feature-box {
   content: "✔️";
   color: #2563eb;
   font-size: 12px;
+  padding-left: 30px;
 }
 
 .dark .feature-box ul li::before {
   content: "✔️";
   color: #fff;
   font-size: 12px;
+  padding-left: 30px;
 }
 @media (max-width: 1024px) {
   .navbar {
@@ -528,7 +530,7 @@ feature-box {
   padding: 0 32px;
 }
 
-/* --- Header Row --- */
+/* --- Header Row --- 
 .trusted-header {
   display: flex;
   align-items: flex-start;
@@ -537,37 +539,77 @@ feature-box {
   margin-bottom: 48px;
 }
 
+.trusted-text {
+  max-width: 620px;
+}
+
 .trusted-header .section-title {
   font-size: 42px;
   font-weight: 800;
   color: #0d0d0d;
   line-height: 1.15;
-  margin: 0 0 16px;
-  max-width: 460px;
+  margin-bottom:  16px;
   letter-spacing: -0.5px;
 }
 
 .trusted-header .section-sub {
-  font-size: 15px;
+  font-size: 20px;
   color: #6b7280;
   line-height: 1.6;
-  max-width: 380px;
-  margin: 0;
+}
+
+.trusted-action {
+  flex-shrink: 0;
 }
 
 .trusted-header .compare-link {
   display: inline-block;
   background: #5b21b6;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 14px 22px;
   border-radius: 8px;
   text-decoration: none;
   white-space: nowrap;
-  margin-top: 0;
-  align-self: center;
+
   transition: background 0.2s;
+}*/
+
+.trusted-header {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  display: block;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  max-width: 650px;
+  
+}
+
+.trusted-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-sub {
+  font-size: 20px;
+  color: #6b7280;
+  max-width: 550px;
+}
+
+.compare-link {
+  background: #5b21b6;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .trusted-header .compare-link:hover {
@@ -591,7 +633,7 @@ feature-box {
 }
 
 .trusted-card p {
-  font-size: 14px;
+  font-size: 16px;
   color: #6b7280;
   line-height: 1.65;
   margin: 0;
