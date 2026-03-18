@@ -18,6 +18,9 @@
         <button class="menu-toggle"><span class="material-symbols-outlined">menu</span>
         </button>
 
+        <button class="account-toggle"><span class="material-symbols-outlined">menu</span>
+        </button>
+
         <ul class="nav-links">
           <li>Product</li>
           <li>Pricing</li>
@@ -420,13 +423,24 @@
 
    <script>
     const toggle = document.querySelector(".menu-toggle");
+    const accountToggle = document.querySelector(".account-toggle");
+
     const navLinks = document.querySelector(".nav-links");
+
     const navRight = document.querySelector(".nav-right");
 
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("active");
-      navRight.classList.toggle("active");
+      navRight.classList.remove("active");
     });
+
+
+    accountToggle.addEventListener("click", () => {
+      navRight.classList.toggle("active");
+      navLinks.classList.remove("active");
+    });
+
+
    </script>
    </body>
 </html>
